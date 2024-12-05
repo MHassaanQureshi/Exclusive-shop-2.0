@@ -1,3 +1,4 @@
+"use client";
 import Timer from "../Timer/Timer";
 import Image from "next/image";
 export default function Speaker(){

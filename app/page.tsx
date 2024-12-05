@@ -3,7 +3,7 @@ import Image from "next/image";
 import Hero from "./components/Hero-section/Hero";
 import Sale from "./components/Sale/Sale";
 import Browsecat from "./components/Browsecat/Browsecat";
-import Productcard from "./components/products-card/productcard";
+import Productcard from "./components/productscard/Productcard";
 import Speaker from "./components/speaker/Speaker";
 import Newarr from "./components/Newarrival/Newarr";
 
