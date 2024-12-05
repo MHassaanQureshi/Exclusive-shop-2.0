@@ -42,9 +42,9 @@ const Timer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex  gap-3">
+    <div className="flex  gap-3 items-center">
       <div className="flex flex-col items-center">
-      <span className="text-sm"> Days</span>
+      <span className="text-sm "> Days</span>
         <span className="text-lg">{timeLeft.days}  </span>
         
       </div>

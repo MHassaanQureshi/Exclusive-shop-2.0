@@ -29,7 +29,7 @@ export default function Product({ name, img, price, from,review }: Pram) {
         className="bg-white rounded-2xl p-2 shadow-sm"
       />
       <Image
-        src="/images/group.png"
+        src="/images/Group.png"
         alt="group button"
         width={30}
         height={30}
@@ -54,7 +54,7 @@ export default function Product({ name, img, price, from,review }: Pram) {
           <p className="text-[#DB4444] p-1 text-sm">${price}</p>
           <p className="text-gray-600 line-through">${from}</p>
           <span className="flex gap-2">
-          <Image src="/images/five-star.png" alt="unable to load" width={80} height={30} />
+          <Image src="/images/fivestar.png" alt="unable to load" width={80} height={30} />
           <p>({review})</p>
           </span>
         </div>

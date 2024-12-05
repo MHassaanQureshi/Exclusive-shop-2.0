@@ -4,8 +4,12 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import Catcard from "../Catcard/Catcard";
-
-export default function Browsecat() {
+import Product from "../Product/Product";
+interface Props{
+  text1:string;
+  text2:string;
+}
+export default function Productscard({text1,text2}:Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   
@@ -36,11 +40,11 @@ export default function Browsecat() {
         <div className="w-[90%] flex flex-col gap-4">
           <span className="flex items-center gap-2 align-middle">
             <span className="bg-[#DB4444] h-[2rem] text-[#DB4444]">...</span>
-            <h1 className="text-[#DB4444] font-bold">Categories</h1>
+            <h1 className="text-[#DB4444] font-bold">{text1}</h1>
           </span>
           <span>
             <div className="flex flex-col gap-1">
-              <span className="pb-4 text-2xl font-bold">Browse By Category</span>
+              <span className="pb-4 text-2xl font-bold">{text2}</span>
               
             </div>
             
@@ -49,16 +53,16 @@ export default function Browsecat() {
         <div
           ref={scrollRef}
           className="w-[90%] mx-auto p-2 flex h-auto mt-8 items-stretch 
-           overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hidden"
+           overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hidden" >
+            <Product name="The north coat" img="/images/hoodie.png" price="260" from="360" review="65" />
+            <Product name="Gucci duffle bag" img="/images/bag.png" price="960" from="1160" review="95" />
+            <Product name="RGB liquid CPU Cooler" img="/images/graphic-card.png" price="160" from="170" review="66" />
+            <Product name="Small BookSelf" img="/images/table.png" price="460" from="560" review="65" />
+            <Product name="The north coat" img="/images/hoodie.png" price="260" from="360" review="65" />
+            <Product name="Gucci duffle bag" img="/images/bag.png" price="960" from="1160" review="95" />
+            <Product name="RGB liquid CPU Cooler" img="/images/graphic-card.png" price="160" from="170" review="66" />
+            <Product name="Small BookSelf" img="/images/table.png" price="460" from="560" review="65" />
 
-        >
-          <Catcard name="Phones" img="/images/cellphonecat.png"/>
-          <Catcard name="Computers" img="/images/computercat.png"/>
-          <Catcard name="Headphones" img="/images/headphonecat.png"/>
-          <Catcard name="Smart Watch" img="/images/smartwatchcat.png"/>
-          <Catcard name="Gamepad" img="/images/gamepadcat.png"/>
-          <Catcard name="Cameras" img="/images/camera.png"/>
-            
             </div>
             <span className="flex gap-3 items-center justify-center mt-4">
               <Image
