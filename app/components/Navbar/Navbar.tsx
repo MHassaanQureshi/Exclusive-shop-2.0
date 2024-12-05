@@ -52,64 +52,74 @@ export default function Navbar() {
                     </button>
                 </div>
                
-                <ul className="hidden lg:flex space-x-8 text-2xl">
+                <ul className="hidden lg:flex space-x-8 text-2xl items-center">
                     <li>
-                        <Link href="/" className="hover:border-b-2 border-red-700">
+                        <Link href="/" className="hover:border-b-2 border-black">
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link href="/About" className="hover:border-b-2 border-red-700">
+                        <Link href="/About" className="hover:border-b-2 border-black">
                             About
                         </Link>
                     </li>
                     
                     <li>
-                        <Link href="/Signup" className="hover:border-b-2 border-red-700">
+                        <Link href="/Signup" className="hover:border-b-2 border-black">
                             Sign Up
                         </Link>
                     </li>
                     <li>
-                        <Link href="/Contact" className="hover:border-b-2 border-red-700">
+                        <Link href="/Contact" className="hover:border-b-2 border-black">
                             Contact
                         </Link>
                     </li>
                     <li>
-                        <span>
-                            <input type="text" />
-                            <button><Image src="/images/component 2.png" alt="" width={30} height={30} /></button>
+                        <span className="flex bg-white py-2">
+                            <input type="text" className="p-2"/>
+                            <button><Image src="/images/search.png" alt="" width={30} height={30} /></button>
                         </span>
+                    </li>
+                    <li>
+                        <ul className="flex item-center align-middle gap-3 ">
+                        <li>
+                        <Link href="/Cart"> <Image src="/images/cart.png" alt="" width={30} height={30} className="hover:border-b-2 border-black"/></Link>
+                    </li>
+                    <li className="mt-1">
+                        <Link href=""> <Image src="/images/heart.png" alt="" width={30} height={30} className="hover:border-b-2 border-black" /></Link>
+                    </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
             
             {menuOpen && (
-                <div className="lg:hidden w-[50%] bg- flex flex-col bg-gray-300 bg-opacity-30 backdrop-blur-md rounded-lg  shadow-lg text-black absolute mt-2 right-2 ">
+                <div className="lg:hidden w-[50%] bg- flex flex-col bg-gray-300 bg-opacity-30 backdrop-blur-md rounded-lg  shadow-lg text-black absolute mt-2 right-2  z-10">
                 <ul className="flex flex-col space-y-4 mt-4 p-4">
                   <li>
-                    <Link href="/" className="hover:border-b-2 border-red-700">
+                    <Link href="/" className="hover:border-b-2 border-black">
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link href="/About" className="hover:border-b-2 border-red-700">
+                    <Link href="/About" className="hover:border-b-2 border-black">
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Signup" className="hover:border-b-2 border-red-700">
+                    <Link href="/Signup" className="hover:border-b-2 border-black">
                       Sign Up
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Contact" className="hover:border-b-2 border-red-700">
+                    <Link href="/Contact" className="hover:border-b-2 border-black">
                       Contact
                     </Link>
                   </li>
                   <li>
-                        <span className="flex bg-white py-2">
-                            <input type="text" />
-                            <button><Image src="/images/component 2.png" alt="" width={30} height={30} /></button>
+                        <span className="flex bg-white p-2 w-full">
+                            <input type="text" className="w-[90%]"/>
+                            <button><Image src="/images/search.png" alt="" width={30} height={30} /></button>
                         </span>
                     </li>
                     <li>

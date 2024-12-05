@@ -8,7 +8,7 @@ export default function Category(){
     const [menuOpen, setMenuOpen] = useState(false);
     return(
         <>
-        <div className="container mx-auto flex justify-between items-center w-[80%] ">
+        <div className="container mx-auto flex justify-between items-center w-[80%] md:w-[40%] md:flex-col md:mx-5 md:gap-4">
             
             <h1 className="text-black font-bold text-xl">Categories</h1>
             
@@ -38,37 +38,37 @@ export default function Category(){
                 </button>
             </div>
            
-            <ul className="hidden lg:flex flex-col text-2xl w-full ">
+            <ul className="hidden lg:flex flex-col text-2xl  border-r-2 pr-10 gap-4">
             <li>
-              <span className="flex gap-4 items-center">
-                        <p>Womans Fashion</p>
+              <span className="flex gap-4 items-center ">
+                        <p className="hover:border-b-2 border-black">Womans Fashion</p>
                         <Image src="/images/cat-arrow.png" alt="unable to load" width={10} height={10} className="w-[0.5rem] h-[1rem]"/>
                     </span>
               </li>
               <li>
               <span className="flex gap-4 items-center">
-                        <p>Mans Fashion</p>
+                        <p className="hover:border-b-2 border-black">Mans Fashion</p>
                         <Image src="/images/cat-arrow.png" alt="unable to load" width={10} height={10} className="w-[0.5rem] h-[1rem]"/>
                     </span>
               </li>
              
               <li>
-              <p>Electronics</p>
+              <p className="hover:border-b-2 border-black">Electronics</p>
               </li>
               <li>
-              <p>Home & Lifestyle</p>  
+              <p className="hover:border-b-2 border-black">Home & Lifestyle</p>  
                 </li>
                 <li>
-                <p>Sports & Outdoor</p>
+                <p className="hover:border-b-2 border-black">Sports & Outdoor</p>
                 </li>
                 <li>
-                <p>Baby’s & Toys</p>
+                <p className="hover:border-b-2 border-black">Baby’s & Toys</p>
                 </li>
                 <li>
-                <p>Groceries & Pets</p>
+                <p className="hover:border-b-2 border-black">Groceries & Pets</p>
                 </li>
                 <li>
-                <p>Health & Beauty</p>
+                <p className="hover:border-b-2 border-black">Health & Beauty</p>
                 </li>
             </ul>
         </div>
@@ -78,34 +78,34 @@ export default function Category(){
             <ul className="flex flex-col space-y-4 mt-4 p-4">
               <li>
               <span className="flex gap-4 items-center">
-                        <p>Womans Fashion</p>
+                        <p className="hover:border-b-2 border-black">Womans Fashion</p>
                         <Image src="/images/cat-arrow.png" alt="unable to load" width={10} height={10} className="w-[0.5rem] h-[1rem]"/>
                     </span>
               </li>
               <li>
               <span className="flex gap-4 items-center">
-                        <p>Mans Fashion</p>
+                        <p className="hover:border-b-2 border-black">Mans Fashion</p>
                         <Image src="/images/cat-arrow.png" alt="unable to load" width={10} height={10} className="w-[0.5rem] h-[1rem]"/>
                     </span>
               </li>
              
               <li>
-              <p>Electronics</p>
+              <p className="hover:border-b-2 border-black">Electronics</p>
               </li>
               <li>
-              <p>Home & Lifestyle</p>  
+              <p className="hover:border-b-2 border-black">Home & Lifestyle</p>  
                 </li>
                 <li>
-                <p>Sports & Outdoor</p>
+                <p className="hover:border-b-2 border-black">Sports & Outdoor</p>
                 </li>
                 <li>
-                <p>Baby’s & Toys</p>
+                <p className="hover:border-b-2 border-black">Baby’s & Toys</p>
                 </li>
                 <li>
-                <p>Groceries & Pets</p>
+                <p className="hover:border-b-2 border-black">Groceries & Pets</p>
                 </li>
                 <li>
-                <p>Health & Beauty</p>
+                <p className="hover:border-b-2 border-black">Health & Beauty</p>
                 </li>
             </ul>
           </div>
