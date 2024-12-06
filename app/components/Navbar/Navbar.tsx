@@ -75,18 +75,21 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <span className="flex bg-white py-2">
-                            <input type="text" className="p-2"/>
-                            <button><Image src="/images/search.png" alt="" width={30} height={30} /></button>
+                        <span className="flex bg-gray-200 py-2  px-2 rounded-2xl">
+                            <input type="text" className=" bg-transparent "/>
+                            <button className="px-2" ><Image src="/images/search.png" alt="" width={30} height={30} /></button>
                         </span>
                     </li>
                     <li>
-                        <ul className="flex item-center align-middle gap-3 ">
+                        <ul className="flex items-center align-middle gap-3 ">
                         <li>
                         <Link href="/Cart"> <Image src="/images/cart.png" alt="" width={30} height={30} className="hover:border-b-2 border-black"/></Link>
                     </li>
                     <li className="mt-1">
                         <Link href=""> <Image src="/images/heart.png" alt="" width={30} height={30} className="hover:border-b-2 border-black" /></Link>
+                    </li>
+                    <li className="">
+                        <Link href=""> <Image src="/images/user.png" alt="" width={30} height={30} className="hover:border-b-2 border-black" /></Link>
                     </li>
                         </ul>
                     </li>
@@ -123,12 +126,15 @@ export default function Navbar() {
                         </span>
                     </li>
                     <li>
-                        <ul className="flex item-center align-middle gap-3 ">
+                        <ul className="flex items-center align-middle gap-3 ">
                         <li>
                         <Link href="/Cart"> <Image src="/images/cart.png" alt="" width={30} height={30} /></Link>
                     </li>
                     <li className="mt-1">
                         <Link href=""> <Image src="/images/heart.png" alt="" width={30} height={30} /></Link>
+                    </li>
+                    <li className="">
+                        <Link href=""> <Image src="/images/user.png" alt="" width={30} height={30} /></Link>
                     </li>
                         </ul>
                     </li>

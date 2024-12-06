@@ -14,7 +14,7 @@ interface Pram {
 export default function Product({ name, img, price, from,review }: Pram) {
   const { addToCart } = useCart();
   return (
-    <div className="w-full snap-center flex-shrink-0">
+    <div className="w-full snap-center flex-shrink-0 md:w-[50%] lg:w-[30%]">
       <div className="flex flex-col bg-gray-100 w-[95%] mx-auto rounded-lg shadow-md">
   <div className="relative group">
     

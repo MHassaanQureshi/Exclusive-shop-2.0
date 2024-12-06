@@ -41,9 +41,9 @@ export default function Home() {
       <Newarr />
     </div>
     <div>
-      <Help img="/images/icon-delivery.png" text1="FREE AND FAST DELIVERY" text2="Free delivery for all orders over $140"/>
+      <Help img="/images/delivery.png" text1="FREE AND FAST DELIVERY" text2="Free delivery for all orders over $140"/>
       <Help img="/images/service.png" text1="24/7 CUSTOMER SERVICE" text2="Friendly 24/7 customer support"/>
-      <Help img="/images/icon-secure.png" text1="MONEY BACK GUARANTEE" text2="We return money within 30 days"/>
+      <Help img="/images/secure.png" text1="MONEY BACK GUARANTEE" text2="We return money within 30 days"/>
     </div>
     </>
   );

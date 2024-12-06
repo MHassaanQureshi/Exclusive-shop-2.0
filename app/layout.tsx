@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/header";
 import { CartProvider } from "./context/cartContext";
+import Buttonup from "./components/Buttonup/Buttonup";
+import Footer from "./components/Footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,7 +45,8 @@ export default function RootLayout({
           <Header />
           <Navbar />
           <main className="flex-grow">{children}</main> {/* Ensures the main content takes up the remaining space */}
-          
+          <Buttonup />
+          <Footer />
         </CartProvider>
       </body>
     </html>

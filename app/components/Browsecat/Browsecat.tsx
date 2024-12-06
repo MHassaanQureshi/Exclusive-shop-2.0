@@ -33,34 +33,15 @@ export default function Browsecat() {
   return (
     <>
       <div className="w-full items-center flex justify-center flex-col gap-4">
-        <div className="w-[90%] flex flex-col gap-4">
-          <span className="flex items-center gap-2 align-middle">
-            <span className="bg-[#DB4444] h-[2rem] text-[#DB4444]">...</span>
-            <h1 className="text-[#DB4444] font-bold">Categories</h1>
+      <div className="w-[90%] flex flex-col gap-4 md:flex-row md:gap-20 md:justify-between">
+        <span className="flex  flex-col gap-2 md:flex-col">
+           <span className="flex gap-2">
+           <span className="bg-[#DB4444] h-[2rem] text-[#DB4444] w-[1rem]">...</span>
+           <h1 className="text-[#DB4444] font-bold">Categories</h1>
+           </span>
+            <span className="pb-4 text-2xl font-bold">Browse By Categorry</span>
           </span>
-          <span>
-            <div className="flex flex-col gap-1">
-              <span className="pb-4 text-2xl font-bold">Browse By Category</span>
-              
-            </div>
-            
-          </span>
-        </div>
-        <div
-          ref={scrollRef}
-          className="w-[90%] mx-auto p-2 flex h-auto mt-8 items-stretch 
-           overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hidden"
-
-        >
-          <Catcard name="Phones" img="/images/cellphonecat.png"/>
-          <Catcard name="Computers" img="/images/computercat.png"/>
-          <Catcard name="Headphones" img="/images/headphonecat.png"/>
-          <Catcard name="Smart Watch" img="/images/smartwatchcat.png"/>
-          <Catcard name="Gamepad" img="/images/gamepadcat.png"/>
-          <Catcard name="Cameras" img="/images/camera.png"/>
-            
-            </div>
-            <span className="flex gap-3 items-center justify-center mt-4">
+          <span className="flex gap-3 items-center justify-center mt-4">
               <Image
                 src="/images/left-arrow.png"
                 alt="unable to load"
@@ -78,6 +59,23 @@ export default function Browsecat() {
                 onClick={scrollRight}
               />
             </span>
+        </div>
+       
+        <div
+          ref={scrollRef}
+          className="w-[90%] mx-auto p-2 flex h-auto mt-8 items-stretch 
+           overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hidden"
+
+        >
+          <Catcard name="Phones" img="/images/cellphonecat.png"/>
+          <Catcard name="Computers" img="/images/computercat.png"/>
+          <Catcard name="Headphones" img="/images/headphonecat.png"/>
+          <Catcard name="Smart Watch" img="/images/smartwatchcat.png"/>
+          <Catcard name="Gamepad" img="/images/gamepadcat.png"/>
+          <Catcard name="Cameras" img="/images/camera.png"/>
+            
+            </div>
+           
         </div>
       
     </>
