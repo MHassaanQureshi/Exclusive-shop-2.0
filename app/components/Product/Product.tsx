@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+import React from "react";
+import { useCart } from "@/app/context/cartContext";
 
 interface Pram {
   name: string;
@@ -10,6 +12,7 @@ interface Pram {
 }
 
 export default function Product({ name, img, price, from,review }: Pram) {
+  const { addToCart } = useCart();
   return (
     <div className="w-full snap-center flex-shrink-0">
       <div className="flex flex-col bg-gray-100 w-[95%] mx-auto rounded-lg shadow-md">
@@ -43,9 +46,9 @@ export default function Product({ name, img, price, from,review }: Pram) {
     </div>
 
     
-    <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity">
+    <button className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => addToCart({ name, img, price, from, review })}>
       <h1 className="text-white text-lg px-4 py-2 rounded bg-black">Add to cart</h1>
-    </div>
+    </button>
   </div>
 
 

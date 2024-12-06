@@ -6,6 +6,7 @@ import Browsecat from "./components/Browsecat/Browsecat";
 import Productcard from "./components/productscard/Productcard";
 import Speaker from "./components/speaker/Speaker";
 import Newarr from "./components/Newarrival/Newarr";
+import Help from "./components/Help-design/Help";
 
 
 export default function Home() {
@@ -38,6 +39,11 @@ export default function Home() {
     <div className="w-full mt-10 p-2">
 
       <Newarr />
+    </div>
+    <div>
+      <Help img="/images/icon-delivery.png" text1="FREE AND FAST DELIVERY" text2="Free delivery for all orders over $140"/>
+      <Help img="/images/service.png" text1="24/7 CUSTOMER SERVICE" text2="Friendly 24/7 customer support"/>
+      <Help img="/images/icon-secure.png" text1="MONEY BACK GUARANTEE" text2="We return money within 30 days"/>
     </div>
     </>
   );
