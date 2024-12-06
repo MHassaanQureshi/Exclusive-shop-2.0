@@ -64,7 +64,7 @@ export default function Browsecat() {
         <div
           ref={scrollRef}
           className="w-[90%] mx-auto p-2 flex h-auto mt-8 items-stretch 
-           overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hidden"
+           overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hidden scrollbar-none overflow-y-scroll"
 
         >
           <Catcard name="Phones" img="/images/cellphonecat.png"/>

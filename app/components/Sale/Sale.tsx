@@ -75,7 +75,7 @@ export default function Sale({text1,text2}:Props) {
         
         <div
           ref={scrollRef}
-          className="w-[90%] mx-auto p-2 flex h-auto mt-8 items-stretch overflow-x-auto snap-x snap-mandatory scroll-smooth"
+          className="w-[90%] mx-auto p-2 flex h-auto mt-8 items-stretch overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none overflow-y-scroll"
         >
           <Product name="AK-900 Wired Keyboard" img="/images/keyboard.png" price="100" from="120" review="100"/>
           <Product name="IPS LCD Gaming Monitor" img="/images/monitor.png" price="600" from="820" review="10"/>

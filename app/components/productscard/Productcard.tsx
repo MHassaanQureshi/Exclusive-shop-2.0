@@ -66,7 +66,7 @@ export default function Productscard({text1,text2}:Props) {
         </div>
         <div
           ref={scrollRef}
-          className="w-[90%] mx-auto p-2 flex h-auto mt-8 items-stretch 
+          className="w-[90%] mx-auto p-2 flex h-auto mt-8 items-stretch scrollbar-none overflow-y-scroll
            overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hidden" >
             <Product name="The north coat" img="/images/hoodie.png" price="260" from="360" review="65" />
             <Product name="Gucci duffle bag" img="/images/bag.png" price="960" from="1160" review="95" />

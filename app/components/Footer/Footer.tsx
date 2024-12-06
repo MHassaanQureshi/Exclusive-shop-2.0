@@ -3,11 +3,11 @@ import Image from "next/image"
 export default function Footer(){
     return(
 
-        <div className="flex flex-col bg-black items-center justify-center text-white pt-2 pb-2">
-            <div className="w-[80%] flex flex-col items-center justify-center">
-                <div className="text-white flex flex-col p-4 items-center">
+        <div className="flex flex-col bg-black items-center w-full justify-center text-white pt-2 pb-2">
+            <div className="w-[80%] flex flex-col items-center justify-center md:flex-row md:items-start py-10">
+                <div className="text-white flex flex-col p-4 items-center md:items-start">
                     <h1 className="font-extrabold">Exclusive</h1>
-                    <ul className="flex flex-col p-4 items-center justify-center align-middle">
+                    <ul className="flex flex-col p-4 items-center justify-center align-middle md:items-start md:p-0 md:mt-10 md:gap-4">
                         <li className="font-bold">Subscribe</li>
                         <li>Get 10% off your first order</li>
                         <li>
@@ -18,17 +18,17 @@ export default function Footer(){
                     </li>
                     </ul>
                 </div>
-                <div  className="flex flex-col p-4 items-center">
+                <div  className="flex flex-col p-4 items-center md:items-start md:gap-4">
                     <h1 className="font-extrabold">Support</h1>
-                    <ul className="flex flex-col p-4 items-center">
+                    <ul className="flex flex-col p-4 items-center md:items-start md:p-0">
                         <li>111 ,karachi,Pakistan</li>
                         <li>exclusive@gmail.com</li>
                         <li>+88015-88888-9999</li>
                     </ul>
                 </div>
-                <div className="flex flex-col p-4 items-center">
+                <div className="flex flex-col p-4 items-center md:items-start ">
                     <h1 className="font-extrabold">Account</h1>
-                    <ul className="flex flex-col p-4 items-center">
+                    <ul className="flex flex-col p-4 items-center md:items-start md:p-0 md:gap-2">
                         <li>My Account</li>
                         <li>Login / Register</li>
                         <li>Cart</li>
@@ -36,9 +36,9 @@ export default function Footer(){
                         <li>Shop</li>
                     </ul>
                 </div>
-                <div className="flex flex-col p-4 items-center">
+                <div className="flex flex-col p-4 items-center md:items-start">
                     <h1 className="font-extrabold">Quick Link</h1>
-                    <ul className="flex flex-col p-4 items-center">
+                    <ul className="flex flex-col p-4 items-center md:items-start md:p-0 md:gap-2">
                         <li>Privacy Policy</li>
                         <li>Terms Of Use</li>
                         <li>FAQ</li>
